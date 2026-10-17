@@ -1,0 +1,15 @@
+Default public ASR model:
+sherpa-onnx-x-asr-480ms-streaming-zipformer-transducer-zh-en-punct-int8-2026-06-05
+
+Converted runtime artifact:
+https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-x-asr-480ms-streaming-zipformer-transducer-zh-en-punct-int8-2026-06-05.tar.bz2
+Its README identifies the original X-ASR project:
+https://github.com/Gilgamesh-J/X-ASR
+Original model card:
+https://huggingface.co/GilgameshWind/X-ASR-zh-en
+The original model card declares Apache-2.0. See bundled Apache-2.0.txt.
+
+Only matched INT8 encoder, decoder, INT8 joiner, tokens and the vocabulary
+exported from the matching SentencePiece model are packaged. No classroom
+input or private hotword seed is included. The app is not endorsed by the
+model authors. Model licensing does not grant rights to input course content.

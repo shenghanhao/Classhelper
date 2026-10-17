@@ -1,0 +1,26 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="1024"
+    android:viewportHeight="1024">
+  <!-- White classroom note card. Content stays inside the adaptive-icon safe zone. -->
+  <path
+      android:fillColor="#FFFFFF"
+      android:pathData="M347,215L677,215A72,72 0,0 1,749 287L749,753A72,72 0,0 1,677 825L347,825A72,72 0,0 1,275 753L275,287A72,72 0,0 1,347 215Z" />
+  <path
+      android:fillColor="#F3C766"
+      android:pathData="M668,271A24,24 0,1 1,668 319A24,24 0,1 1,668 271Z" />
+  <!-- Microphone and live-transcript marks. -->
+  <path
+      android:fillColor="#0D6471"
+      android:pathData="M512,304A61,61 0,0 1,573 365L573,450A61,61 0,0 1,451 450L451,365A61,61 0,0 1,512 304Z" />
+  <path
+      android:fillColor="#0D6471"
+      android:pathData="M369.5,439A19.5,19.5 0,0 1,408.5 439L408.5,459C408.5,521 453,565.5 512,565.5C571,565.5 615.5,521 615.5,459L615.5,439A19.5,19.5 0,0 1,654.5 439L654.5,459C654.5,534 602,591.5 530,603.5L530,619L589,619A18,18 0,0 1,589 655L435,655A18,18 0,0 1,435 619L494,619L494,603.5C422,591.5 369.5,534 369.5,459Z" />
+  <path
+      android:fillColor="#79A5A8"
+      android:pathData="M361.5,692.5L664.5,692.5A11.5,11.5 0,0 1,676 704A11.5,11.5 0,0 1,664.5 715.5L361.5,715.5A11.5,11.5 0,0 1,350 704A11.5,11.5 0,0 1,361.5 692.5Z" />
+  <path
+      android:fillColor="#A9C7C8"
+      android:pathData="M361.5,741.5L569.5,741.5A11.5,11.5 0,0 1,581 753A11.5,11.5 0,0 1,569.5 764.5L361.5,764.5A11.5,11.5 0,0 1,350 753A11.5,11.5 0,0 1,361.5 741.5Z" />
+</vector>

@@ -1,0 +1,5 @@
+*.iml
+.gradle/
+build/
+local.properties
+app/.asr-models/

@@ -1,0 +1,31 @@
+ClassMemory bundles the arm64-v8a native libraries. The default public model
+is described separately in X-ASR-NOTICE.txt. The following notice documents
+the optional original Zipformer model and its matching vocabulary:
+
+sherpa-onnx-streaming-zipformer-bilingual-zh-en-2023-02-20
+Source archive:
+https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-streaming-zipformer-bilingual-zh-en-2023-02-20.tar.bz2
+Archive SHA-256: 27ffbd9ee24ad186d99acc2f6354d7992b27bcab490812510665fa8f9389c5f8
+
+The official sherpa-onnx model documentation identifies this as a community-
+contributed model supporting Chinese and English, converted from
+https://huggingface.co/csukuangfj/k2fsa-zipformer-chinese-english-mixed. The
+model metadata declares the Apache-2.0 license. This application retains only
+the runtime assets recommended by the official INT8 example: an INT8 encoder,
+an FP32 decoder, an INT8 joiner, and tokens.txt.
+
+For v1.13.7 Transducer modified-beam-search hotword encoding, the matching
+upstream vocabulary is also bundled:
+https://huggingface.co/csukuangfj/k2fsa-zipformer-chinese-english-mixed/blob/main/data/lang_char_bpe/bpe.vocab
+(`bpe.vocab`, 12,564 bytes, SHA-256
+d0b642f3a2eacd5fadefdeff9e0e1358cab729647cbb7fe58cf738e1f7407029).
+It is a tokenizer vocabulary, not a second acoustic model, and is included
+solely so the native BPE encoder can encode the two configured hotword phrases.
+
+Included native libraries:
+- libonnxruntime.so SHA-256 dc5e4c172b1be9e530c6a62ad8f1be3e0a911cabdee6195abf28dab72477e194
+- libsherpa-onnx-jni.so SHA-256 28ea5709f2ab29a0e264e446601c64e1c2e19c2de6dcc17493f0cd0357605b2c
+
+The Kotlin JNI wrappers in com.k2fsa.sherpa.onnx are derived from the official
+sherpa-onnx v1.13.7 kotlin-api and retain its Apache-2.0 license. No audio
+input is included in this application.
